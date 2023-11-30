@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19206" systemVersion="21A559" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Results" representedClassName="Results" syncable="YES">
+        <attribute name="gameDate" optional="YES" attributeType="String"/>
+        <attribute name="gameTime" optional="YES" attributeType="String"/>
+        <attribute name="player1" optional="YES" attributeType="String"/>
+        <attribute name="player2" optional="YES" attributeType="String"/>
+        <attribute name="winner" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="Results" positionX="64.2642822265625" positionY="-695.79052734375" width="128" height="118"/>
+    </elements>
+</model>

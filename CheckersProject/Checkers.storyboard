@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -51,15 +51,22 @@
                                     <action selector="resultsBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="1Rk-Is-8E5"/>
                                 </connections>
                             </button>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G8S-gp-ZrI">
-                                <rect key="frame" x="16" y="60" width="351" height="590.66666666666663"/>
+                            <view hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G8S-gp-ZrI">
+                                <rect key="frame" x="19.666666666666657" y="126.66666666666669" width="351" height="590.66666666666652"/>
                                 <subviews>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ebh-ss-NHV">
+                                    <tableView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ebh-ss-NHV">
                                         <rect key="frame" x="0.0" y="0.0" width="351" height="590.66666666666663"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <tableView key="tableFooterView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="7xc-NF-wI6">
+                                            <rect key="frame" x="0.0" y="0.0" width="351" height="590.66666666666663"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableView>
                                     </tableView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="Ebh-ss-NHV" firstAttribute="leading" secondItem="G8S-gp-ZrI" secondAttribute="leading" id="9rV-6q-lvZ"/>
                                     <constraint firstAttribute="trailing" secondItem="Ebh-ss-NHV" secondAttribute="trailing" id="Dy2-SV-h1a"/>
@@ -104,11 +111,10 @@
                         <constraints>
                             <constraint firstItem="0Du-2e-pvT" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="0Xg-ao-ZBC"/>
                             <constraint firstItem="AoS-ws-gcT" firstAttribute="width" secondItem="hX1-vv-tvE" secondAttribute="width" multiplier="1.1" id="1Eg-ec-Tc4"/>
-                            <constraint firstItem="G8S-gp-ZrI" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="3Uy-w6-mWh"/>
                             <constraint firstItem="cbh-Vq-E6F" firstAttribute="width" secondItem="hX1-vv-tvE" secondAttribute="width" id="3h4-Br-uBX"/>
-                            <constraint firstItem="G8S-gp-ZrI" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="16" id="4xX-iu-iGX"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="hX1-vv-tvE" secondAttribute="bottom" constant="16" id="AGq-fa-3DR"/>
                             <constraint firstItem="hX1-vv-tvE" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.28" id="Ayz-eJ-5aU"/>
+                            <constraint firstItem="G8S-gp-ZrI" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="EmE-eu-wIE"/>
                             <constraint firstItem="6kV-sA-1pK" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="HFD-ea-GzJ"/>
                             <constraint firstItem="AoS-ws-gcT" firstAttribute="top" secondItem="hLz-hk-q1O" secondAttribute="bottom" constant="16" id="HVr-v7-Vn0"/>
                             <constraint firstItem="0Du-2e-pvT" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.7" id="JKF-Ml-Izg"/>
@@ -128,6 +134,7 @@
                             <constraint firstItem="0Du-2e-pvT" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.9" id="stx-Zz-jJh"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="cbh-Vq-E6F" secondAttribute="trailing" constant="16" id="tae-Tn-1MU"/>
                             <constraint firstItem="hLz-hk-q1O" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="tcF-Ck-9xW"/>
+                            <constraint firstItem="G8S-gp-ZrI" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="uJE-dl-lXv"/>
                         </constraints>
                     </view>
                     <connections>
@@ -135,6 +142,7 @@
                         <outlet property="newGameBtn" destination="AoS-ws-gcT" id="py8-wn-WZc"/>
                         <outlet property="playersNames" destination="6kV-sA-1pK" id="K7L-aa-MvH"/>
                         <outlet property="resultsBtn" destination="hX1-vv-tvE" id="RZu-yi-Y0t"/>
+                        <outlet property="resultsTableView" destination="Ebh-ss-NHV" id="BY5-UJ-rrg"/>
                         <outlet property="resultsView" destination="G8S-gp-ZrI" id="o02-KC-Lnh"/>
                         <outlet property="settingsBtn" destination="cbh-Vq-E6F" id="fXF-u5-6lt"/>
                         <outlet property="settingsView" destination="0Du-2e-pvT" id="wFB-2H-fLm"/>

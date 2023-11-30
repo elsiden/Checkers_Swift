@@ -12,6 +12,7 @@ extension Checkers {
         addNotificationBackground()
         createThemes()
         setupCollectionView()
+        setupTableView()
         setupNamesOrTrain()
         
         if FileManager().fileExists(atPath: URL.saveURL(pathComponent: KeysUserDefaults.theme.rawValue).path) {

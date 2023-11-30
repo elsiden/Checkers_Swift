@@ -18,8 +18,13 @@ extension Checkers {
     }
     
     func endGame(where winner: CheckersColor) {
-        let whoWin = winner == .white ? "White" : "Black"
+        let whoWin = whoStepLabel.text ?? ""
         stopTimer()
+        let result = Results_m(player1: players[0].playerName, player2: players[1].playerName, winner: whoWin, gameTime: timerLabel.text ?? "00:00", gameDate: dataDate)
+        results.insert(result, at: 0)
+        resultsCopy = results
+        CoreDataManager.shared.addNewResult(by: result)
+        resultsTableView.reloadData()
         presentAlertController(with: "\(whoWin) wins", message: "Do you want to start a new game?", actions: UIAlertAction(title: "Yes", style: .default, handler: { _ in
             self.removeDataFromUserDefaults()
             self.removeSavePositions()

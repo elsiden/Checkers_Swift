@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SnapKit
 
 extension Checkers {
     func createChessboard() {
@@ -70,7 +71,6 @@ extension Checkers {
     }
     
     func create(where view: UIView) {
-        view.center.y = self.view.center.y
         view.isHidden = false
         view.layer.zPosition = 1
     }

@@ -6,6 +6,9 @@
 //
 
 import UIKit
+import SnapKit
+import RxSwift
+import RxCocoa
 
 enum CheckersColor: Int {
     case white = 0
@@ -25,8 +28,27 @@ class Checkers: UIViewController{
     @IBOutlet weak var whoStepImage: UIImageView!
     @IBOutlet weak var whoStepView: UIView!
     @IBOutlet weak var whoStepLabel: UILabel!
+    @IBOutlet weak var resultsTableView: UITableView!
     @IBOutlet weak var collectionTheme: CustomSettingsView!
     @IBOutlet weak var playersNames: CustomPlayersNameAlert!
+
+    let clearAllButton: UIButton = {
+        let button = UIButton()
+        button.titleLabel?.font = UIFont(name: "Chalkduster", size: 20)
+        button.setTitleColor(UIColor.white, for: .normal)
+        button.setTitle("Clear All", for: .normal)
+        button.isHidden = true
+        return button
+    }()
+
+    let sortButton: UIButton = {
+        let button = UIButton()
+        button.titleLabel?.font = UIFont(name: "Chalkduster", size: 20)
+        button.setTitleColor(UIColor.white, for: .normal)
+        button.setTitle("Sort", for: .normal)
+        button.isHidden = true
+        return button
+    }()
     
     var chessboard: UIView!
     var frameChessboard: UIImageView!
@@ -62,11 +84,18 @@ class Checkers: UIViewController{
     var background: UIImageView?
     
     var players: [Player] = []
+    var results = [Results_m]()
+    var resultsCopy = [Results_m]()
+    var isResultsOriginal = true
+
+    let disposeBag = DisposeBag()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         checkSaveFile()
+        setupStyle()
+        addDBButtons()
     }
     
     deinit {

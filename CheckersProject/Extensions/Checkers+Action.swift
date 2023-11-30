@@ -24,14 +24,22 @@ extension Checkers: UIGestureRecognizerDelegate {
     }
     
     @IBAction func settingsBtn(_ sender: UIButton) {
-        actionWithMenuElements(where: settingsView, firstBtn: newGameBtn, secondBtn: resultsBtn, position: self.view.bounds.size.width)
+        actionWithMenuElements(where: settingsView,
+                               firstBtn: newGameBtn,
+                               secondBtn: resultsBtn,
+                               position: self.view.bounds.size.width,
+                               isResults: false)
     }
     
     @IBAction func resultsBtn(_ sender: UIButton) {
-        actionWithMenuElements(where: resultsView, firstBtn: newGameBtn, secondBtn: settingsBtn, position: -self.resultsView.bounds.size.width)
+        actionWithMenuElements(where: resultsView,
+                               firstBtn: newGameBtn,
+                               secondBtn: settingsBtn,
+                               position: -self.resultsView.bounds.size.width,
+                               isResults: true)
     }
     
-    func actionWithMenuElements(where view: UIView, firstBtn: UIButton, secondBtn: UIButton, position: CGFloat) {
+    func actionWithMenuElements(where view: UIView, firstBtn: UIButton, secondBtn: UIButton, position: CGFloat, isResults: Bool) {
         self.stopTimer()
         if view.isHidden == true {
             if position == self.view.bounds.size.width {
@@ -48,9 +56,21 @@ extension Checkers: UIGestureRecognizerDelegate {
                 self.whoStepLabel.transform = self.whoStepLabel.transform.scaledBy(x: 0.001, y: 0.001)
                 firstBtn.transform = firstBtn.transform.scaledBy(x: 0.001, y: 0.001)
                 secondBtn.transform = secondBtn.transform.scaledBy(x: 0.001, y: 0.001)
-            } completion: { _ in }
+            } completion: { _ in
+                if isResults {
+                    UIView.animate(withDuration: 0.5) {
+                        self.clearAllButton.transform = .identity
+                        self.sortButton.transform = .identity
+                        self.clearAllButton.isHidden = false
+                        self.sortButton.isHidden = false
+                    }
+                }
+            }
         } else {
             UIView.animate(withDuration: 0.5, delay: 0.0, options: []) {
+                self.clearAllButton.transform = self.clearAllButton.transform.scaledBy(x: 0.001, y: 0.001)
+                self.sortButton.transform = self.sortButton.transform.scaledBy(x: 0.001, y: 0.001)
+
                 view.frame.origin.x = position
                 self.frameChessboard.transform = .identity
                 self.timerLabel.transform = .identity
@@ -61,6 +81,8 @@ extension Checkers: UIGestureRecognizerDelegate {
             } completion: { _ in
                 view.isHidden = true
                 self.isFirstStep = true
+                self.clearAllButton.isHidden = true
+                self.sortButton.isHidden = true
             }
         }
     }
@@ -331,5 +353,7 @@ extension Checkers: UIGestureRecognizerDelegate {
         default: break
         }
     }
+
+
     
 }

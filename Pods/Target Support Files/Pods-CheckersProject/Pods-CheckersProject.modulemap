@@ -1,0 +1,6 @@
+framework module Pods_CheckersProject {
+  umbrella header "Pods-CheckersProject-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -16,8 +16,6 @@ extension Checkers {
             self.settingsBtn.transform = .identity
             self.resultsBtn.transform = .identity
             self.setShadow(where: self.frameChessboard)
-//            self.newGameConstraint.constant = 16
-//            self.view.layoutIfNeeded()
         } completion: { _ in
             self.chessboard.subviews.forEach { cell in
                 guard cell.tag != 0 else { return }

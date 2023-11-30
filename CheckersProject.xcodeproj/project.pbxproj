@@ -3,19 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E8559327EDC392296A741ECB /* Pods_CheckersProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908527C812AD62E06096F6E1 /* Pods_CheckersProject.framework */; };
 		F107613A2732844A00955329 /* Checkers+KingMove.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10761392732844A00955329 /* Checkers+KingMove.swift */; };
 		F121603726E662D200A92244 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = F121603626E662D200A92244 /* Player.swift */; };
 		F12502F126C68590003D2F66 /* UIFont+CoreKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12502F026C68590003D2F66 /* UIFont+CoreKit.swift */; };
 		F12502F426C6EA15003D2F66 /* Checkers+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12502F326C6EA15003D2F66 /* Checkers+Create.swift */; };
 		F12502F626C6EA66003D2F66 /* Checkers+Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12502F526C6EA66003D2F66 /* Checkers+Timer.swift */; };
+		F13028EC29280D1C00931A01 /* ResultsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13028EB29280D1C00931A01 /* ResultsTableViewCell.swift */; };
+		F13028EE2928100300931A01 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13028ED2928100300931A01 /* UIView+Extensions.swift */; };
+		F13843D1292E969A00B68C21 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13843D0292E969A00B68C21 /* String+Extensions.swift */; };
+		F13843D3292E96F300B68C21 /* Checkers+Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13843D2292E96F300B68C21 /* Checkers+Results.swift */; };
 		F13BA89226C95FC600023434 /* Checkers+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13BA89126C95FC600023434 /* Checkers+Alert.swift */; };
 		F13BA89426C9602F00023434 /* Dited.otf in Resources */ = {isa = PBXBuildFile; fileRef = F13BA89326C9602F00023434 /* Dited.otf */; };
 		F13BA89726C9706F00023434 /* KeysUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13BA89626C9706F00023434 /* KeysUserDefaults.swift */; };
 		F13BA89A26C9AFF300023434 /* CheckerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13BA89926C9AFF300023434 /* CheckerInfo.swift */; };
+		F1585DA327576D5F00F2DFB0 /* CheckersResults.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F1585DA127576D5F00F2DFB0 /* CheckersResults.xcdatamodeld */; };
+		F1585DA62757725100F2DFB0 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1585DA52757725100F2DFB0 /* CoreDataManager.swift */; };
+		F1585DA92757B52700F2DFB0 /* Results+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1585DA72757B52700F2DFB0 /* Results+CoreDataClass.swift */; };
+		F1585DAA2757B52700F2DFB0 /* Results+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1585DA82757B52700F2DFB0 /* Results+CoreDataProperties.swift */; };
+		F1585DAC2757B65200F2DFB0 /* Results_m.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1585DAB2757B65200F2DFB0 /* Results_m.swift */; };
+		F1585DAE2757BF0700F2DFB0 /* Checkers+ResultsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1585DAD2757BF0700F2DFB0 /* Checkers+ResultsTableView.swift */; };
 		F1607FF926C591CD00377748 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1607FF826C591CD00377748 /* AppDelegate.swift */; };
 		F1607FFB26C591CD00377748 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1607FFA26C591CD00377748 /* SceneDelegate.swift */; };
 		F160800226C591CF00377748 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F160800126C591CF00377748 /* Assets.xcassets */; };
@@ -42,15 +53,28 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05A38CBD5E6E71E716FD639A /* Pods-CheckersProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckersProject.release.xcconfig"; path = "Target Support Files/Pods-CheckersProject/Pods-CheckersProject.release.xcconfig"; sourceTree = "<group>"; };
+		908527C812AD62E06096F6E1 /* Pods_CheckersProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheckersProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBF85E758CE2AE3F495DBB41 /* Pods-CheckersProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckersProject.debug.xcconfig"; path = "Target Support Files/Pods-CheckersProject/Pods-CheckersProject.debug.xcconfig"; sourceTree = "<group>"; };
 		F10761392732844A00955329 /* Checkers+KingMove.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Checkers+KingMove.swift"; sourceTree = "<group>"; };
 		F121603626E662D200A92244 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		F12502F026C68590003D2F66 /* UIFont+CoreKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+CoreKit.swift"; sourceTree = "<group>"; };
 		F12502F326C6EA15003D2F66 /* Checkers+Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Checkers+Create.swift"; sourceTree = "<group>"; };
 		F12502F526C6EA66003D2F66 /* Checkers+Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Checkers+Timer.swift"; sourceTree = "<group>"; };
+		F13028EB29280D1C00931A01 /* ResultsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsTableViewCell.swift; sourceTree = "<group>"; };
+		F13028ED2928100300931A01 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		F13843D0292E969A00B68C21 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		F13843D2292E96F300B68C21 /* Checkers+Results.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Checkers+Results.swift"; sourceTree = "<group>"; };
 		F13BA89126C95FC600023434 /* Checkers+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Checkers+Alert.swift"; sourceTree = "<group>"; };
 		F13BA89326C9602F00023434 /* Dited.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Dited.otf; sourceTree = "<group>"; };
 		F13BA89626C9706F00023434 /* KeysUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeysUserDefaults.swift; sourceTree = "<group>"; };
 		F13BA89926C9AFF300023434 /* CheckerInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckerInfo.swift; sourceTree = "<group>"; };
+		F1585DA227576D5F00F2DFB0 /* CheckersResults.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CheckersResults.xcdatamodel; sourceTree = "<group>"; };
+		F1585DA52757725100F2DFB0 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		F1585DA72757B52700F2DFB0 /* Results+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Results+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F1585DA82757B52700F2DFB0 /* Results+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Results+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F1585DAB2757B65200F2DFB0 /* Results_m.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Results_m.swift; sourceTree = "<group>"; };
+		F1585DAD2757BF0700F2DFB0 /* Checkers+ResultsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Checkers+ResultsTableView.swift"; sourceTree = "<group>"; };
 		F1607FF526C591CD00377748 /* CheckersProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckersProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1607FF826C591CD00377748 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1607FFA26C591CD00377748 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,18 +107,44 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8559327EDC392296A741ECB /* Pods_CheckersProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2DFF97A9660B19ACB10E6AEE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				908527C812AD62E06096F6E1 /* Pods_CheckersProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5EA4B03AB318B1A8806504E4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EBF85E758CE2AE3F495DBB41 /* Pods-CheckersProject.debug.xcconfig */,
+				05A38CBD5E6E71E716FD639A /* Pods-CheckersProject.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F12502ED26C68508003D2F66 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
 				F13BA89326C9602F00023434 /* Dited.otf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F13028EA29280D0100931A01 /* ResultsTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				F13028EB29280D1C00931A01 /* ResultsTableViewCell.swift */,
+			);
+			path = ResultsTableViewCell;
 			sourceTree = "<group>";
 		};
 		F13BA89526C9705100023434 /* KeysUserDefaults */ = {
@@ -105,14 +155,25 @@
 			path = KeysUserDefaults;
 			sourceTree = "<group>";
 		};
-		F13BA89826C9AFCE00023434 /* Classes */ = {
+		F13BA89826C9AFCE00023434 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				F13BA89926C9AFF300023434 /* CheckerInfo.swift */,
 				F19E4E4826D18E4500394452 /* Theme.swift */,
 				F121603626E662D200A92244 /* Player.swift */,
+				F1585DAB2757B65200F2DFB0 /* Results_m.swift */,
 			);
-			path = Classes;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F1585DA42757723D00F2DFB0 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				F1585DA52757725100F2DFB0 /* CoreDataManager.swift */,
+				F1585DA72757B52700F2DFB0 /* Results+CoreDataClass.swift */,
+				F1585DA82757B52700F2DFB0 /* Results+CoreDataProperties.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 		F1607FEC26C591CD00377748 = {
@@ -120,6 +181,8 @@
 			children = (
 				F1607FF726C591CD00377748 /* CheckersProject */,
 				F1607FF626C591CD00377748 /* Products */,
+				5EA4B03AB318B1A8806504E4 /* Pods */,
+				2DFF97A9660B19ACB10E6AEE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,9 +197,10 @@
 		F1607FF726C591CD00377748 /* CheckersProject */ = {
 			isa = PBXGroup;
 			children = (
+				F1585DA42757723D00F2DFB0 /* CoreData */,
 				F1A172A226DD25740074EA50 /* CustomViews */,
 				F19E4E4026D14B5000394452 /* Cells */,
-				F13BA89826C9AFCE00023434 /* Classes */,
+				F13BA89826C9AFCE00023434 /* Models */,
 				F13BA89526C9705100023434 /* KeysUserDefaults */,
 				F12502ED26C68508003D2F66 /* Fonts */,
 				F160800E26C5C9BE00377748 /* Extensions */,
@@ -147,6 +211,7 @@
 				F160800626C591CF00377748 /* Info.plist */,
 				F160801326C5D95100377748 /* Checkers.storyboard */,
 				F160801526C5D96A00377748 /* Checkers.swift */,
+				F1585DA127576D5F00F2DFB0 /* CheckersResults.xcdatamodeld */,
 			);
 			path = CheckersProject;
 			sourceTree = "<group>";
@@ -159,8 +224,8 @@
 				F12502F326C6EA15003D2F66 /* Checkers+Create.swift */,
 				F1664EE626C877E80009D292 /* Checkers+Animate.swift */,
 				F12502F526C6EA66003D2F66 /* Checkers+Timer.swift */,
-				F13BA89126C95FC600023434 /* Checkers+Alert.swift */,
 				F1BE2A9626C9C37B00084316 /* URL+CoreKit.swift */,
+				F13BA89126C95FC600023434 /* Checkers+Alert.swift */,
 				F1BE2A9826C9DEA200084316 /* Checkers+SaveData.swift */,
 				F19E4E4626D14E1000394452 /* CustomSettingsView+CollectionView.swift */,
 				F1618FF926DC435C00F6CF63 /* Checkers+Move.swift */,
@@ -169,6 +234,10 @@
 				F173C1A426DEAC7D0021BB25 /* UIView+CoreKit.swift */,
 				F19354EA26E541820014B405 /* Checkers+Appearance.swift */,
 				F10761392732844A00955329 /* Checkers+KingMove.swift */,
+				F1585DAD2757BF0700F2DFB0 /* Checkers+ResultsTableView.swift */,
+				F13028ED2928100300931A01 /* UIView+Extensions.swift */,
+				F13843D0292E969A00B68C21 /* String+Extensions.swift */,
+				F13843D2292E96F300B68C21 /* Checkers+Results.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -185,6 +254,7 @@
 		F19E4E4026D14B5000394452 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				F13028EA29280D0100931A01 /* ResultsTableViewCell */,
 				F19E4E4126D14B5900394452 /* ThemeCollectionViewCell */,
 			);
 			path = Cells;
@@ -203,7 +273,6 @@
 			isa = PBXGroup;
 			children = (
 				F19354E526E52CD70014B405 /* CustomPlayersNameAlert */,
-				F1A172A426DD258E0074EA50 /* CustomResultsView */,
 				F1A172A326DD25810074EA50 /* CustomSettingsView */,
 			);
 			path = CustomViews;
@@ -218,13 +287,6 @@
 			path = CustomSettingsView;
 			sourceTree = "<group>";
 		};
-		F1A172A426DD258E0074EA50 /* CustomResultsView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CustomResultsView;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -232,9 +294,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F160800926C591CF00377748 /* Build configuration list for PBXNativeTarget "CheckersProject" */;
 			buildPhases = (
+				B4ABD1E99158F875D9742D8E /* [CP] Check Pods Manifest.lock */,
 				F1607FF126C591CD00377748 /* Sources */,
 				F1607FF226C591CD00377748 /* Frameworks */,
 				F1607FF326C591CD00377748 /* Resources */,
+				5BADF3DA8E88FE9F5BC3E3DA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -294,34 +358,86 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5BADF3DA8E88FE9F5BC3E3DA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CheckersProject/Pods-CheckersProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CheckersProject/Pods-CheckersProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CheckersProject/Pods-CheckersProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4ABD1E99158F875D9742D8E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CheckersProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F1607FF126C591CD00377748 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1585DAC2757B65200F2DFB0 /* Results_m.swift in Sources */,
 				F121603726E662D200A92244 /* Player.swift in Sources */,
 				F173C1A526DEAC7D0021BB25 /* UIView+CoreKit.swift in Sources */,
 				F13BA89226C95FC600023434 /* Checkers+Alert.swift in Sources */,
 				F19E4E4426D14BA000394452 /* ThemeCollectionViewCell.swift in Sources */,
 				F13BA89A26C9AFF300023434 /* CheckerInfo.swift in Sources */,
 				F12502F126C68590003D2F66 /* UIFont+CoreKit.swift in Sources */,
+				F1585DAE2757BF0700F2DFB0 /* Checkers+ResultsTableView.swift in Sources */,
+				F1585DA62757725100F2DFB0 /* CoreDataManager.swift in Sources */,
 				F1607FF926C591CD00377748 /* AppDelegate.swift in Sources */,
+				F13028EC29280D1C00931A01 /* ResultsTableViewCell.swift in Sources */,
 				F160801626C5D96A00377748 /* Checkers.swift in Sources */,
+				F13843D1292E969A00B68C21 /* String+Extensions.swift in Sources */,
 				F12502F626C6EA66003D2F66 /* Checkers+Timer.swift in Sources */,
 				F1618FFC26DC43C700F6CF63 /* Checkers+NotificationCenter.swift in Sources */,
 				F1BE2A9726C9C37B00084316 /* URL+CoreKit.swift in Sources */,
 				F19E4E4926D18E4500394452 /* Theme.swift in Sources */,
+				F1585DA327576D5F00F2DFB0 /* CheckersResults.xcdatamodeld in Sources */,
 				F19E4E4726D14E1000394452 /* CustomSettingsView+CollectionView.swift in Sources */,
 				F1607FFB26C591CD00377748 /* SceneDelegate.swift in Sources */,
+				F13843D3292E96F300B68C21 /* Checkers+Results.swift in Sources */,
 				F19354E926E52D450014B405 /* CustomPlayersNameAlert.swift in Sources */,
 				F107613A2732844A00955329 /* Checkers+KingMove.swift in Sources */,
+				F13028EE2928100300931A01 /* UIView+Extensions.swift in Sources */,
 				F19354EB26E541820014B405 /* Checkers+Appearance.swift in Sources */,
 				F1618FFA26DC435C00F6CF63 /* Checkers+Move.swift in Sources */,
 				F173C1A326DE91BF0021BB25 /* Checkers+Date.swift in Sources */,
 				F1664EE726C877E80009D292 /* Checkers+Animate.swift in Sources */,
 				F1BE2A9926C9DEA200084316 /* Checkers+SaveData.swift in Sources */,
 				F160801226C5D8E800377748 /* Checkers+Action.swift in Sources */,
+				F1585DA92757B52700F2DFB0 /* Results+CoreDataClass.swift in Sources */,
 				F12502F426C6EA15003D2F66 /* Checkers+Create.swift in Sources */,
+				F1585DAA2757B52700F2DFB0 /* Results+CoreDataProperties.swift in Sources */,
 				F1A172A626DD262C0074EA50 /* CustomSettingsView.swift in Sources */,
 				F13BA89726C9706F00023434 /* KeysUserDefaults.swift in Sources */,
 			);
@@ -459,6 +575,7 @@
 		};
 		F160800A26C591CF00377748 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBF85E758CE2AE3F495DBB41 /* Pods-CheckersProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -478,6 +595,7 @@
 		};
 		F160800B26C591CF00377748 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05A38CBD5E6E71E716FD639A /* Pods-CheckersProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -517,6 +635,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F1585DA127576D5F00F2DFB0 /* CheckersResults.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F1585DA227576D5F00F2DFB0 /* CheckersResults.xcdatamodel */,
+			);
+			currentVersion = F1585DA227576D5F00F2DFB0 /* CheckersResults.xcdatamodel */;
+			path = CheckersResults.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F1607FED26C591CD00377748 /* Project object */;
 }

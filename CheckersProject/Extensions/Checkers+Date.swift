@@ -10,6 +10,7 @@ import UIKit
 extension Checkers {
     func setDate() {
         let startGameDate: Date = Date()
+        dateFormatter.dateFormat = "dd.MM.yy"
         dataDate = dateFormatter.string(from: startGameDate)
     }
 }
